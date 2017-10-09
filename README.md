@@ -2,11 +2,13 @@
 
 iMessage Extensions fail to run on iOS11 based simulators consistently, on XCode9.0 (9A235)
 
+![Crash Alert](error.png)
+
 ## How to reproduce the issue
 
 Setting `CFBundlePackageType` to `XPC!` will consistenly crash iOS11 simulators.
 
-## PList
+## Example pList
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -31,3 +33,11 @@ Setting `CFBundlePackageType` to `XPC!` will consistenly crash iOS11 simulators.
 </dict>
 </plist>
 ```
+## Stack Trace
+
+![Stack Trace](stacktrace.png)
+
+## Similar issues in community forums
+
+https://forums.developer.apple.com/message/252075#252075
+
