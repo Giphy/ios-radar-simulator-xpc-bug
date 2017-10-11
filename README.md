@@ -30,6 +30,13 @@ Setting `CFBundlePackageType` to `XPC!` will consistently crash iOS11 simulators
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+    <key>NSExtension</key>
+    <dict>
+        <key>NSExtensionPointIdentifier</key>
+        <string>com.apple.message-payload-provider</string>
+        <key>NSExtensionMainStoryboard</key>
+        <string>MainInterface</string>
+    </dict>
 </dict>
 </plist>
 ```
